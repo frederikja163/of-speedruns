@@ -1,7 +1,5 @@
-// deno-lint-ignore no-unused-vars
-const SPEEDRUN_KEY = "of-speedruns";
-// deno-lint-ignore no-unused-vars
-const speedrunConfig = {
+export const BASE_KEY = "of-speedruns:";
+export const speedrunConfig = {
 	gameMap: "Australia",
 	gameMapSize: "Normal",
 	gameType: "Singleplayer",

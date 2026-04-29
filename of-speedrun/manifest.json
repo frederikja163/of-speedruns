@@ -11,10 +11,11 @@
 	},
 	"content_scripts": [
 		{
-			"js": ["config.js", "menu.js", "game.js"],
+			"js": ["dist/dist.js"],
 			"matches": [
 				"https://openfront.io/*"
-			]
+			],
+			"type": "module"
 		}
 	]
 }
