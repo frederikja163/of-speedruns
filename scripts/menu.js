@@ -1,7 +1,9 @@
+import { getSoloButton, getStartButton } from "./get-elements.js";
 import { speedrunConfig } from "./config.js";
 import { toggleHighscore } from "./highscore.js";
 
-export function createButton(/** @type {HTMLElement} */ soloEle) {
+export function createButton() {
+	const soloEle = getSoloButton();
 	const /** @type {HTMLElement} */ parentEle = soloEle.parentElement;
 	parentEle.classList.add("sm:grid-cols-3");
 	soloEle.classList.add("lg:col-span-2");
@@ -30,9 +32,7 @@ export function createButton(/** @type {HTMLElement} */ soloEle) {
 
 isSpeedrun = false;
 function startGame() {
-	const /** @type {HTMLButtonElement} */ startEle = document.querySelector(
-		"single-player-modal > div > div:last-child > button",
-	);
+	const startEle = getStartButton();
 	startEle.click();
 	isSpeedrun = true;
 }

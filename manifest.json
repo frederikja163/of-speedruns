@@ -1,7 +1,7 @@
 {
   "name": "OpenFront speedrun",
   "description": "Speedruns for openfront.",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 3,
 	"icons": {
 		"16": "images/icon-16.png",
@@ -13,7 +13,8 @@
 		{
 			"js": ["dist/dist.js"],
 			"matches": [
-				"https://openfront.io/*"
+				"https://openfront.io/*",
+				"https://playtest.openfront.dev/*"
 			],
 			"type": "module"
 		}
